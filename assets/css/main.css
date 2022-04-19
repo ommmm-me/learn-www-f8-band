@@ -1,0 +1,270 @@
+/* Reset CSS ------------------ START */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Reset CSS ------------------ END */
+
+html {
+    font-size: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+:root {
+    --color-app-primary: #000;
+    --color-app-secondary: #f00;
+    --color-app-alt: rgba(255, 255, 255, 0.6);
+    --color-app-alt-2: rgba(0, 0, 0, 0.1);
+
+    --font-family-app: 'Avenir Next', 'Samsung Sans', 'Segoe UI', Arial;
+
+    --font-size-title: 1.7rem;
+}
+
+* {
+    font-family: var(--font-family-app);
+}
+
+.button {
+    cursor: pointer;
+}
+.button:hover {
+    background-color: var(--color-app-alt);
+    opacity: 0.8;
+}
+.header-submenu-parent {
+    position: relative;
+}
+.header-submenu-parent::after {
+    --size-of-font: 0.8rem;
+
+    content: "▼";
+    font-size: var(--size-of-font);
+}
+.header-submenu-child {
+    position: absolute; left: 0; top: 100%;
+    background-color: white;
+
+    display: none;
+}
+.submenu-item {
+    background-color: white;
+    min-width: 200px;
+    padding: 10px 20px;
+
+    color: black;
+}
+.submenu-item:hover {
+    background-color: var(--color-app-alt-2);
+}
+.header-submenu-parent:hover div {
+    display: block;
+}
+
+.section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-title {
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+.section-brief {
+    font-style: italic;
+}
+
+#header {
+    position: fixed; top: 0; left: 0;
+    background-color: var(--color-app-primary);
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+}
+.header-left-div {
+    margin-right: 20px;
+    padding: 20px;
+    color: white;
+}
+
+.header-right {
+    padding: 20px;
+    color: white;
+}
+.header-right:hover {
+    background-color: var(--color-app-secondary);
+}
+
+#slider img {
+    width: 100%;
+}
+
+.intro-body {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.intro-team {
+    width: 100%;
+    margin-top: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.intro-team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro-team img {
+    max-width: 150px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#tour {
+    background-color: var(--color-app-primary);
+}
+
+.tour-title {
+    color: white;
+}
+.tour-brief {
+    color: var(--color-app-alt);
+}
+.tour-list-month {
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.tour-list-month-item {
+    padding: 10px;
+}
+.tour-list-month-item:nth-of-type(n+1) {
+    border-bottom: solid 1px var(--color-app-alt-2);
+}
+.tour-list-month-item::after {
+    content: attr(amount);
+    display: inline-block;
+    float: right;
+    background-color: var(--color-app-primary);
+    min-width: 1.3rem;
+    min-height: 1.3rem;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 50%;
+    text-align: center;
+}
+.tour-list-month-item[amount="0"]::after {
+    content: "Sold out";
+    float: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.tour-list-available {
+    margin-top: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.tour-list-item {
+    background-color: white;
+    width: calc(100%/3 - 10px);
+}
+.tour-list-item div {
+    padding: 10px;
+}
+.tour-list-item-title {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.tour-list-item-date {
+    margin-bottom: 5px;
+    color: gray;
+}
+.tour-list-item-intro {
+    margin-bottom: 10px;
+}
+.tour-list-item-button {
+    display: inline-block;
+    background-color: var(--color-app-primary);
+    padding: 10px 15px;
+    color: white;
+}
+.tour-list-item-button:hover {
+    background-color: gray;
+}
+
+#contact input {
+    padding: 10px;
+}
+.contact-details {
+    width: 100%;
+    margin: 20px 0;
+
+    display: flex;
+}
+.contact-div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-line {
+    margin-bottom: 5px;
+    display: flex;
+}
+#contact svg {
+    margin-right: 5px;
+}
+.contact-right div {
+    width: 100%;
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.contact-right div input {
+    width: calc(50% - 5px);
+}
+.contact-button {
+    background-color: var(--color-app-primary);
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    align-self: flex-end;
+}
+.contact-button:hover {
+    background-color: gray;
+}
+
+#footer svg:hover {
+    fill: gray !important;
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
