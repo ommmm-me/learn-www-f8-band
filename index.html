@@ -4,7 +4,7 @@
 
     <title>F8 Band</title>
     <link rel="icon" href="https://static.fullstack.edu.vn/static/media/f8-icon.7ad2b161d5e80c87e516.png">
-    
+
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
@@ -15,7 +15,7 @@
             <a href="#intro" class="button header-link">BAND</a>
             <a href="#tour" class="button header-link">TOUR</a>
             <a href="#contact" class="button header-link">CONTACT</a>
-            <div class="button header-link header-submenu-parent">
+            <div class="header-link header-submenu-parent">
                 MORE
                 <div class="header-submenu-child">
                     <p class="button submenu-item">Merchandise</p>
@@ -83,7 +83,7 @@
                     <p class="tour-list-item-date">Fri 27 Nov 2016</p>
                     <p class="tour-list-item-intro">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
 
-                    <p class="button tour-list-item-button">Buy Tickets</p>
+                    <a href="#buy-ticket-overlay" class="button tour-list-item-button">Buy Tickets</a>
                 </div>
             </div>
 
@@ -95,7 +95,7 @@
                     <p class="tour-list-item-date">Sat 28 Nov 2016</p>
                     <p class="tour-list-item-intro">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
 
-                    <p class="button tour-list-item-button">Buy Tickets</p>
+                    <a href="#buy-ticket-overlay" class="button tour-list-item-button">Buy Tickets</a>
                 </div>
             </div>
 
@@ -107,7 +107,7 @@
                     <p class="tour-list-item-date">Sun 29 Nov 2016</p>
                     <p class="tour-list-item-intro">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
 
-                    <p class="button tour-list-item-button">Buy Tickets</p>
+                    <a href="#buy-ticket-overlay" class="button tour-list-item-button">Buy Tickets</a>
                 </div>
             </div>
         </div>
@@ -157,7 +157,7 @@
             </div>
         </div>
     </div>
-    
+
     <img src="https://www.w3schools.com/w3images/map.jpg" />
 
     <div id="footer" class="section">
@@ -188,5 +188,47 @@
             </svg>
         </div>
         <div class="footer-copyright">Powered by <a href="//w3schools.com">w3.css</a></div>
+    </div>
+
+    <div id="buy-ticket-overlay">
+        <a href="#tour" class="overlay-close"></a>
+        <div id="buy-ticket-form">
+            <a href="#tour" class="button form-close-top-right" title="Close">✕</a>
+            <p class="section-title form-title has-svg-inline">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" width="32" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                Tickets
+            </p>
+
+            <div class="form-main">
+                <p class="has-svg-inline">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" width="18" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                    </svg>
+                    Tickets, $15 per person
+                </p>
+                <input type="text" placeholder="How many ?" />
+
+                <p class="has-svg-inline">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" width="18" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    Send to
+                </p>
+                <input type="email" placeholder="Enter emai" />
+                <p class="button form-button form-button-pay">PAY ✓</p>
+                <div>
+                    <a href="#tour" class="button form-button form-button-close">Close ✕</a>
+                    <p>Need <a href="#tour"> help</a> ?</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
