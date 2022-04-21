@@ -21,7 +21,7 @@ img {
     --color-app-alt: rgba(255, 255, 255, 0.6);
     --color-app-alt-2: rgba(0, 0, 0, 0.1);
 
-    --font-family-app: 'Avenir Next', 'Samsung Sans', 'Segoe UI', Arial;
+    --font-family-app: 'Avenir Next', 'Segoe UI', Nunito, Arial;
 
     --font-size-title: 1.7rem;
 
