@@ -126,6 +126,20 @@ a {
 #slider img {
     width: 100%;
 }
+.slider-entry {
+    position: relative;
+}
+.slider-entry-text {
+    position: absolute; left: 0; bottom: 0;
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+.slider-entry-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
 
 .intro-body {
     margin-top: 10px;
