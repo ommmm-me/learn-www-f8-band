@@ -45,6 +45,11 @@ a {
 .button:hover {
     opacity: 0.8;
 }
+
+*[screen="small"] {
+    display: none;
+}
+
 .header-submenu-parent {
     position: relative;
 }
@@ -103,10 +108,17 @@ a {
 }
 
 .header-left {
+    position: relative;
     display: flex;
 }
+.header-left-links {
+    display: flex;
+}
+.header-left svg {
+    margin-left: var(--header-padding);
+    stroke: white;
+}
 .header-link {
-    margin-right: 20px;
     padding: var(--header-padding);
     font-size: var(--header-font-size);
     color: white;
@@ -221,6 +233,9 @@ a {
 .tour-list-item {
     background-color: white;
     width: calc(100%/3 - 10px);
+
+    display: flex;
+    flex-direction: column;
 }
 .tour-list-item img:hover {
     opacity: 0.6;
@@ -376,12 +391,4 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-@media (max-width: 768px) {
-    .section {
-        width: 100%;
-    }
-    #buy-ticket-form {
-        width: 100%;
-    }
 }
